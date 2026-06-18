@@ -562,6 +562,38 @@ h3 {
   font-size: clamp(1.2rem, 1.6vw, 1.8rem);
 }
 
+.faq-section {
+  background: var(--white);
+}
+
+.faq-section h2 {
+  max-width: 980px;
+  margin-bottom: 42px;
+}
+
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.faq-list article {
+  min-height: 220px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfaf7;
+}
+
+.faq-list h3 {
+  color: var(--red);
+}
+
+.faq-list p {
+  margin-bottom: 0;
+  color: #40494f;
+}
+
 .quote {
   max-width: 1040px;
 }
@@ -644,7 +676,8 @@ textarea:focus {
 @media (max-width: 1020px) {
   .coach-section,
   .offer-grid,
-  .program-list {
+  .program-list,
+  .faq-list {
     grid-template-columns: 1fr;
   }
 
@@ -727,7 +760,8 @@ textarea:focus {
 
   .proof-strip,
   .offer-grid,
-  .program-list {
+  .program-list,
+  .faq-list {
     grid-template-columns: 1fr;
   }
 
@@ -792,6 +826,10 @@ textarea:focus {
   }
 
   .program-list article {
+    min-height: auto;
+  }
+
+  .faq-list article {
     min-height: auto;
   }
 

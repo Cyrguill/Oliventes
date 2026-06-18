@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://oliventes.com/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://oliventes.com/"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://oliventes.com/en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oliventes.com/"/>
+  </url>
+  <url>
+    <loc>https://oliventes.com/en.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://oliventes.com/"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://oliventes.com/en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oliventes.com/"/>
+  </url>
+</urlset>
