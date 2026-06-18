@@ -526,6 +526,153 @@ h3 {
   color: #4a5459;
 }
 
+.resource-section {
+  background: var(--white);
+}
+
+.resource-header {
+  max-width: 960px;
+  margin-bottom: 38px;
+}
+
+.resource-header p,
+.seo-copy p,
+.seo-card p,
+.seo-link-card p {
+  color: #465056;
+  font-size: clamp(1rem, 1.3vw, 1.16rem);
+}
+
+.resource-grid,
+.seo-card-grid,
+.seo-link-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.resource-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.resource-card,
+.seo-card,
+.seo-link-card {
+  display: grid;
+  align-content: start;
+  min-height: 230px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfaf7;
+}
+
+.resource-card h3,
+.seo-card h2,
+.seo-link-card h3 {
+  color: var(--ink);
+}
+
+.resource-card p,
+.seo-card p,
+.seo-link-card p {
+  margin-bottom: 18px;
+}
+
+.text-link {
+  color: var(--red);
+  font-weight: 900;
+}
+
+.seo-page main {
+  background: var(--paper);
+}
+
+.seo-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.68fr);
+  gap: clamp(32px, 6vw, 86px);
+  align-items: end;
+  padding: clamp(132px, 15vw, 190px) clamp(18px, 6vw, 92px) clamp(64px, 9vw, 118px);
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(17, 24, 32, 0.96), rgba(17, 24, 32, 0.74)),
+    url("assets/hero-showroom.png") center / cover;
+}
+
+.seo-hero h1 {
+  max-width: 1000px;
+  font-size: clamp(2.7rem, 6vw, 6rem);
+}
+
+.seo-hero p {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(1.08rem, 1.6vw, 1.32rem);
+}
+
+.seo-hero-panel {
+  display: grid;
+  gap: 14px;
+  padding: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.34);
+  backdrop-filter: blur(12px);
+}
+
+.seo-hero-panel strong {
+  color: #ff4a61;
+  font-size: 1.9rem;
+}
+
+.seo-hero-panel span {
+  color: rgba(255, 255, 255, 0.76);
+  font-weight: 750;
+}
+
+.seo-copy {
+  max-width: 1180px;
+}
+
+.seo-copy h2,
+.seo-card h2 {
+  margin-bottom: 18px;
+  font-size: clamp(1.9rem, 3.2vw, 3.35rem);
+}
+
+.seo-card-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.seo-card {
+  min-height: 260px;
+  background: var(--white);
+}
+
+.seo-link-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.seo-link-card {
+  min-height: 190px;
+  background: #e9f0ed;
+  border-color: rgba(71, 116, 94, 0.18);
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.68);
+  font-weight: 800;
+}
+
+.breadcrumb a:hover,
+.text-link:hover {
+  text-decoration: underline;
+}
+
 .testimonial-band {
   color: var(--white);
   background:
@@ -677,6 +824,10 @@ textarea:focus {
   .coach-section,
   .offer-grid,
   .program-list,
+  .resource-grid,
+  .seo-hero,
+  .seo-card-grid,
+  .seo-link-grid,
   .faq-list {
     grid-template-columns: 1fr;
   }
@@ -761,8 +912,15 @@ textarea:focus {
   .proof-strip,
   .offer-grid,
   .program-list,
+  .resource-grid,
+  .seo-card-grid,
+  .seo-link-grid,
   .faq-list {
     grid-template-columns: 1fr;
+  }
+
+  .seo-hero {
+    padding-top: 128px;
   }
 
   .proof-strip span {
