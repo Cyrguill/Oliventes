@@ -160,6 +160,11 @@ a {
   isolation: isolate;
 }
 
+.hero picture,
+.coach-section > picture {
+  display: contents;
+}
+
 .hero-image {
   position: absolute;
   inset: 0;
@@ -306,7 +311,8 @@ h3 {
   color: var(--white);
 }
 
-.proof-strip a {
+.proof-strip a,
+.proof-strip span {
   min-height: 74px;
   display: grid;
   place-items: center;
@@ -506,6 +512,10 @@ h3 {
   background: #e9f0ed;
 }
 
+.local-section {
+  background: #f7f7f6;
+}
+
 .program-header {
   max-width: 860px;
   margin-bottom: 36px;
@@ -602,7 +612,7 @@ h3 {
   color: var(--white);
   background:
     linear-gradient(90deg, rgba(17, 24, 32, 0.96), rgba(17, 24, 32, 0.74)),
-    url("assets/hero-showroom.png") center / cover;
+    url("assets/hero-showroom.jpg") center / cover;
 }
 
 .seo-hero h1 {
@@ -641,9 +651,14 @@ h3 {
 }
 
 .seo-copy h2,
+.section-title-small,
 .seo-card h2 {
   margin-bottom: 18px;
   font-size: clamp(1.9rem, 3.2vw, 3.35rem);
+}
+
+.section-title-small {
+  max-width: 1080px;
 }
 
 .seo-card-grid {
@@ -683,7 +698,7 @@ h3 {
   color: var(--white);
   background:
     linear-gradient(90deg, rgba(17, 24, 32, 0.94), rgba(17, 24, 32, 0.78)),
-    url("assets/hero-showroom.png") center / cover;
+    url("assets/hero-showroom.jpg") center / cover;
 }
 
 .founder-note {
@@ -929,7 +944,8 @@ textarea:focus {
     padding-top: 128px;
   }
 
-  .proof-strip a {
+  .proof-strip a,
+  .proof-strip span {
     min-height: 56px;
   }
 
