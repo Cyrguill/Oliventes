@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://oliventes.com/</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr-ca" href="https://oliventes.com/"/>
@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://oliventes.com/en.html</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-ca" href="https://oliventes.com/"/>
@@ -19,38 +19,56 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://oliventes.com/"/>
   </url>
   <url>
+    <loc>https://oliventes.com/appels-entrants-automobile.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://oliventes.com/prise-rendez-vous-automobile.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://oliventes.com/closing-showroom-automobile.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://oliventes.com/coaching-vente-automobile.html</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://oliventes.com/formation-vendeur-automobile.html</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://oliventes.com/coaching-concession-automobile.html</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://oliventes.com/prospection-automobile.html</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://oliventes.com/relance-client-automobile.html</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://oliventes.com/objections-prix-automobile.html</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

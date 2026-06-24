@@ -306,7 +306,7 @@ h3 {
   color: var(--white);
 }
 
-.proof-strip span {
+.proof-strip a {
   min-height: 74px;
   display: grid;
   place-items: center;
@@ -315,6 +315,12 @@ h3 {
   color: rgba(255, 255, 255, 0.74);
   font-weight: 850;
   text-align: center;
+}
+
+.proof-strip a:hover,
+.proof-strip a:focus-visible {
+  color: var(--white);
+  background: var(--red);
 }
 
 .coach-section {
@@ -923,7 +929,7 @@ textarea:focus {
     padding-top: 128px;
   }
 
-  .proof-strip span {
+  .proof-strip a {
     min-height: 56px;
   }
 
