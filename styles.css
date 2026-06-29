@@ -160,8 +160,7 @@ a {
   isolation: isolate;
 }
 
-.hero picture,
-.coach-section > picture {
+.hero picture {
   display: contents;
 }
 
@@ -364,10 +363,19 @@ h3 {
   margin-bottom: 0;
 }
 
+.coach-section > picture,
 .coach-photo {
   width: 100%;
   height: 100%;
   min-height: 760px;
+}
+
+.coach-section > picture {
+  display: block;
+}
+
+.coach-photo {
+  display: block;
   object-fit: cover;
   object-position: center top;
 }
@@ -955,6 +963,7 @@ textarea:focus {
   }
 
   .coach-section,
+  .coach-section > picture,
   .coach-photo {
     min-height: auto;
   }
