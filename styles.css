@@ -628,6 +628,15 @@ h3 {
   font-size: clamp(2.7rem, 6vw, 6rem);
 }
 
+.service-page .seo-hero h1 {
+  max-width: 1420px;
+  font-size: clamp(2.7rem, 5.2vw, 5.45rem);
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
 .seo-hero p {
   max-width: 760px;
   color: rgba(255, 255, 255, 0.82);
