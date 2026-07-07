@@ -697,6 +697,79 @@ h3 {
   border-color: rgba(71, 116, 94, 0.18);
 }
 
+.thank-you-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.62fr);
+  gap: clamp(32px, 6vw, 86px);
+  align-items: end;
+  min-height: 82vh;
+  padding: clamp(132px, 15vw, 190px) clamp(18px, 6vw, 92px) clamp(64px, 9vw, 118px);
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(17, 24, 32, 0.96), rgba(17, 24, 32, 0.68)),
+    url("assets/hero-showroom.jpg") center / cover;
+}
+
+.thank-you-copy h1 {
+  max-width: 980px;
+  font-size: clamp(3.2rem, 7vw, 7rem);
+}
+
+.thank-you-copy p {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(1.08rem, 1.6vw, 1.32rem);
+}
+
+.thank-you-panel {
+  display: grid;
+  gap: 18px;
+  padding: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.36);
+  backdrop-filter: blur(12px);
+}
+
+.thank-you-panel strong {
+  color: #ff4a61;
+  font-size: 1.9rem;
+}
+
+.thank-you-panel ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 750;
+}
+
+.thank-you-next {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.thank-you-next article {
+  min-height: 260px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.thank-you-next h2 {
+  margin-bottom: 18px;
+  font-size: clamp(1.9rem, 3.2vw, 3.35rem);
+}
+
+.thank-you-next p {
+  margin-bottom: 0;
+  color: #465056;
+  font-size: clamp(1rem, 1.3vw, 1.16rem);
+}
+
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
@@ -866,6 +939,8 @@ textarea:focus {
   .seo-hero,
   .seo-card-grid,
   .seo-link-grid,
+  .thank-you-hero,
+  .thank-you-next,
   .faq-list {
     grid-template-columns: 1fr;
   }
@@ -953,11 +1028,17 @@ textarea:focus {
   .resource-grid,
   .seo-card-grid,
   .seo-link-grid,
+  .thank-you-next,
   .faq-list {
     grid-template-columns: 1fr;
   }
 
   .seo-hero {
+    padding-top: 128px;
+  }
+
+  .thank-you-hero {
+    min-height: auto;
     padding-top: 128px;
   }
 
