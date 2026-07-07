@@ -431,7 +431,7 @@
             <h3>Réserve directement ton appel.</h3>
             <p>Choisis le moment qui te convient et Calendly confirmera la rencontre automatiquement.</p>
           </div>
-          <button class="btn primary form-btn" type="button" data-calendly-open>Réserve un appel</button>
+          <a class="btn primary form-btn" href="https://calendly.com/d/ds6d-3gf-dr8" target="_blank" rel="noopener" data-calendly-open>Réserve un appel</a>
           <div class="calendly-booking" id="calendly-booking" hidden aria-label="Calendrier de réservation Calendly"></div>
         </div>
       </section>
@@ -450,7 +450,8 @@
 
         if (!booking || !trigger) return;
 
-        trigger.addEventListener("click", () => {
+        trigger.addEventListener("click", (event) => {
+          event.preventDefault();
           booking.hidden = false;
 
           if (!booking.querySelector(".calendly-inline-widget")) {

@@ -352,7 +352,7 @@
             <h3>Book your call directly.</h3>
             <p>Choose the time that works for you and Calendly will confirm the meeting automatically.</p>
           </div>
-          <button class="btn primary form-btn" type="button" data-calendly-open>Book a call</button>
+          <a class="btn primary form-btn" href="https://calendly.com/d/ds6d-3gf-dr8" target="_blank" rel="noopener" data-calendly-open>Book a call</a>
           <div class="calendly-booking" id="calendly-booking" hidden aria-label="Calendly booking calendar"></div>
         </div>
       </section>
@@ -371,7 +371,8 @@
 
         if (!booking || !trigger) return;
 
-        trigger.addEventListener("click", () => {
+        trigger.addEventListener("click", (event) => {
+          event.preventDefault();
           booking.hidden = false;
 
           if (!booking.querySelector(".calendly-inline-widget")) {
