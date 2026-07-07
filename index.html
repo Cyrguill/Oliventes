@@ -423,32 +423,17 @@
           <div class="section-kicker">Diagnostic gratuit</div>
           <h2>Voyons où vos ventes se bloquent.</h2>
           <p>
-            Envoyez vos infos et on vous proposera un appel de 30 minutes pour identifier les leviers les plus rapides: leads, rendez-vous, objections, closing ou suivi.
+            Réservez un appel de 30 minutes pour identifier les leviers les plus rapides: leads, rendez-vous, objections, closing ou suivi.
           </p>
         </div>
-        <form class="lead-form" action="#" method="post">
-          <label>
-            Nom complet
-            <input type="text" name="name" autocomplete="name" placeholder="Votre nom">
-          </label>
-          <label>
-            Téléphone
-            <input type="tel" name="phone" autocomplete="tel" placeholder="(514) 000-0000">
-          </label>
-          <label>
-            Rôle
-            <select name="role">
-              <option>Vendeur automobile</option>
-              <option>Directeur des ventes</option>
-              <option>Propriétaire / concession</option>
-            </select>
-          </label>
-          <label>
-            Blocage principal
-            <textarea name="challenge" rows="4" placeholder="Ex: trop peu de rendez-vous, objections prix, relances difficiles..."></textarea>
-          </label>
-          <button class="btn primary form-btn" type="submit">Réserve un appel</button>
-        </form>
+        <div class="booking-card">
+          <div>
+            <h3>Réserve directement ton appel.</h3>
+            <p>Choisis le moment qui te convient et Calendly confirmera la rencontre automatiquement.</p>
+          </div>
+          <button class="btn primary form-btn" type="button" data-calendly-open>Réserve un appel</button>
+          <div class="calendly-booking" id="calendly-booking" hidden aria-label="Calendrier de réservation Calendly"></div>
+        </div>
       </section>
     </main>
 
@@ -457,5 +442,38 @@
       <span>Coaching vente automobile</span>
       <a href="#top">Retour en haut</a>
     </footer>
+    <script>
+      (() => {
+        const calendlyUrl = "https://calendly.com/d/ds6d-3gf-dr8";
+        const booking = document.querySelector("#calendly-booking");
+        const trigger = document.querySelector("[data-calendly-open]");
+
+        if (!booking || !trigger) return;
+
+        trigger.addEventListener("click", () => {
+          booking.hidden = false;
+
+          if (!booking.querySelector(".calendly-inline-widget")) {
+            const widget = document.createElement("div");
+            widget.className = "calendly-inline-widget";
+            widget.dataset.url = calendlyUrl;
+            widget.style.minWidth = "320px";
+            widget.style.height = "700px";
+            booking.append(widget);
+
+            if (window.Calendly) {
+              window.Calendly.initInlineWidget({
+                url: calendlyUrl,
+                parentElement: widget
+              });
+            }
+          }
+
+          trigger.textContent = "Choisir un autre moment";
+          booking.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      })();
+    </script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
   </body>
 </html>

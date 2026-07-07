@@ -344,32 +344,17 @@
           <div class="section-kicker">Free diagnostic</div>
           <h2>Let’s find where your sales are getting stuck.</h2>
           <p>
-            Send your information and we will propose a 30-minute call to identify the fastest levers: leads, appointments, objections, closing, or follow-up.
+            Book a 30-minute call to identify the fastest levers: leads, appointments, objections, closing, or follow-up.
           </p>
         </div>
-        <form class="lead-form" action="#" method="post">
-          <label>
-            Full name
-            <input type="text" name="name" autocomplete="name" placeholder="Your name">
-          </label>
-          <label>
-            Phone
-            <input type="tel" name="phone" autocomplete="tel" placeholder="(514) 000-0000">
-          </label>
-          <label>
-            Role
-            <select name="role">
-              <option>Automotive salesperson</option>
-              <option>Sales manager</option>
-              <option>Owner / dealership</option>
-            </select>
-          </label>
-          <label>
-            Main bottleneck
-            <textarea name="challenge" rows="4" placeholder="Example: too few appointments, price objections, difficult follow-ups..."></textarea>
-          </label>
-          <button class="btn primary form-btn" type="submit">Book a call</button>
-        </form>
+        <div class="booking-card">
+          <div>
+            <h3>Book your call directly.</h3>
+            <p>Choose the time that works for you and Calendly will confirm the meeting automatically.</p>
+          </div>
+          <button class="btn primary form-btn" type="button" data-calendly-open>Book a call</button>
+          <div class="calendly-booking" id="calendly-booking" hidden aria-label="Calendly booking calendar"></div>
+        </div>
       </section>
     </main>
 
@@ -378,5 +363,38 @@
       <span>Automotive sales coaching</span>
       <a href="#top">Back to top</a>
     </footer>
+    <script>
+      (() => {
+        const calendlyUrl = "https://calendly.com/d/ds6d-3gf-dr8";
+        const booking = document.querySelector("#calendly-booking");
+        const trigger = document.querySelector("[data-calendly-open]");
+
+        if (!booking || !trigger) return;
+
+        trigger.addEventListener("click", () => {
+          booking.hidden = false;
+
+          if (!booking.querySelector(".calendly-inline-widget")) {
+            const widget = document.createElement("div");
+            widget.className = "calendly-inline-widget";
+            widget.dataset.url = calendlyUrl;
+            widget.style.minWidth = "320px";
+            widget.style.height = "700px";
+            booking.append(widget);
+
+            if (window.Calendly) {
+              window.Calendly.initInlineWidget({
+                url: calendlyUrl,
+                parentElement: widget
+              });
+            }
+          }
+
+          trigger.textContent = "Choose another time";
+          booking.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      })();
+    </script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
   </body>
 </html>

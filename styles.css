@@ -434,7 +434,8 @@ h3 {
 .offer-card,
 .program-list article,
 .metric,
-.lead-form {
+.lead-form,
+.booking-card {
   border-radius: 8px;
 }
 
@@ -873,13 +874,40 @@ h3 {
   background: var(--paper);
 }
 
-.lead-form {
+.lead-form,
+.booking-card {
   display: grid;
   gap: 16px;
   padding: clamp(20px, 3vw, 34px);
   background: var(--white);
   box-shadow: var(--shadow);
   border: 1px solid var(--line);
+}
+
+.booking-card h3 {
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+
+.booking-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.calendly-booking {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfaf7;
+}
+
+.calendly-booking[hidden] {
+  display: none;
+}
+
+.calendly-booking .calendly-inline-widget {
+  width: 100%;
 }
 
 label {
