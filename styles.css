@@ -683,9 +683,18 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.service-audience-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .seo-card {
   min-height: 260px;
   background: var(--white);
+}
+
+.faq-cta {
+  width: fit-content;
+  margin-top: 6px;
 }
 
 .seo-link-grid {
@@ -971,6 +980,16 @@ textarea:focus {
   .thank-you-next,
   .faq-list {
     grid-template-columns: 1fr;
+  }
+
+  .seo-hero > *,
+  .seo-hero-panel {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .no-break {
+    white-space: normal;
   }
 
   .proof-strip {
