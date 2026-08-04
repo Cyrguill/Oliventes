@@ -23,7 +23,7 @@ h1, h2 { margin: 0; font-family: Impact, Haettenschweiler, "Arial Narrow Bold", 
 h1 { max-width: 600px; font-size: clamp(4rem, 7.5vw, 7.4rem); line-height: .88; }
 .hero-copy > p { max-width: 480px; margin: 28px 0 0; font-size: clamp(1.1rem, 1.6vw, 1.45rem); }
 .audience { display: block; max-width: 390px; margin-top: 70px; color: var(--muted); font-size: 1.03rem; }
-.hero-person { position: absolute; z-index: 1; top: -23%; right: 2%; width: auto; height: 150%; filter: drop-shadow(0 28px 34px rgba(0,0,0,.2)); }
+.hero-person { position: absolute; z-index: 1; top: -23%; right: -12%; width: auto; height: 150%; filter: saturate(.93) contrast(.98) drop-shadow(0 20px 30px rgba(0,0,0,.16)); }
 
 .testimonials { padding: 62px 0 82px; color: #fff; background: radial-gradient(circle at 70% -20%, #243342 0%, var(--dark) 48%, #091018 100%); }
 h2 { font-size: clamp(2.8rem, 5vw, 5.1rem); line-height: .94; }
@@ -52,7 +52,7 @@ footer p { margin: 0; color: #aeb6bd; font-size: .84rem; }
   .hero { min-height: 690px; background-position: right center; background-size: auto 100%; }
   .hero-inner { min-height: 690px; }
   .hero-copy { width: 58%; padding-top: 64px; }
-  .hero-person { top: -15%; right: -9%; height: 135%; }
+  .hero-person { top: -15%; right: -18%; height: 135%; }
   .video-grid { grid-template-columns: 1fr; gap: 42px; }
   .video-card p { min-height: 0; }
 }
@@ -68,7 +68,7 @@ footer p { margin: 0; color: #aeb6bd; font-size: .84rem; }
   h1 { max-width: 390px; font-size: clamp(3.65rem, 18vw, 5.2rem); }
   .hero-copy > p { max-width: 330px; margin-top: 20px; font-size: 1.02rem; }
   .audience { max-width: 290px; margin-top: 24px; font-size: .88rem; }
-  .hero-person { top: 30%; right: -30%; height: 94%; opacity: .98; }
+  .hero-person { top: 30%; right: -38%; height: 94%; opacity: .98; }
   .testimonials, .booking { padding-block: 58px; }
   h2 { font-size: clamp(2.65rem, 13vw, 4rem); }
   .video-grid { margin-top: 30px; }
