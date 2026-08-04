@@ -14,7 +14,7 @@ a { color: inherit; }
 .pixel { display: none; }
 .section-inner { width: min(var(--max), calc(100% - 40px)); margin-inline: auto; }
 
-.hero { min-height: 760px; overflow: hidden; background: #f8f7f4 url("assets/hero-v2.jpg") right 46% / auto 108% no-repeat; }
+.hero { min-height: 760px; overflow: hidden; background: #f8f7f4 url("assets/hero-v2.jpg") right 14% / auto 200% no-repeat; }
 .hero-inner { position: relative; width: min(1450px, 100%); min-height: 760px; margin: auto; padding: 38px clamp(24px, 5vw, 74px) 70px; isolation: isolate; }
 .brand { position: relative; z-index: 3; display: inline-flex; align-items: center; gap: 16px; color: #090909; text-decoration: none; font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: clamp(1.45rem, 2.2vw, 2.25rem); letter-spacing: .16em; text-transform: uppercase; }
 .brand-mark { position: relative; display: grid; width: 58px; aspect-ratio: 1; place-items: center; color: #fff; background: #050505; border-bottom: 5px solid var(--red); font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 2rem; letter-spacing: -.02em; }
@@ -48,7 +48,8 @@ footer { display: grid; justify-items: center; gap: 20px; padding: 44px 20px 38p
 footer p { margin: 0; color: #aeb6bd; font-size: .84rem; }
 
 @media (max-width: 900px) {
-  .hero, .hero-inner { min-height: 690px; }
+  .hero { min-height: 690px; background-position: right 17%; background-size: auto 170%; }
+  .hero-inner { min-height: 690px; }
   .hero-copy { width: 58%; padding-top: 64px; }
   .video-grid { grid-template-columns: 1fr; gap: 42px; }
   .video-card p { min-height: 0; }
@@ -56,7 +57,7 @@ footer p { margin: 0; color: #aeb6bd; font-size: .84rem; }
 
 @media (max-width: 640px) {
   .section-inner { width: min(100% - 28px, var(--max)); }
-  .hero { min-height: 760px; background-position: 70% 46%; background-size: auto 108%; }
+  .hero { min-height: 760px; background-position: 74% 28%; background-size: auto 130%; }
   .hero-inner { min-height: 760px; padding: 22px 18px 0; }
   .hero-inner::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(247,246,242,.98) 0%, rgba(247,246,242,.86) 40%, rgba(247,246,242,.15) 70%); }
   .brand { gap: 10px; font-size: 1.25rem; }
