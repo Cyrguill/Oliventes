@@ -14,8 +14,9 @@ a { color: inherit; }
 .pixel { display: none; }
 .section-inner { width: min(var(--max), calc(100% - 40px)); margin-inline: auto; }
 
-.hero { min-height: 760px; overflow: hidden; background: #f8f7f4 url("assets/hero-background-v3.jpg") right center / auto 100% no-repeat; }
-.hero-inner { position: relative; width: min(1450px, 100%); min-height: 760px; margin: auto; padding: 38px clamp(24px, 5vw, 74px) 70px; isolation: isolate; }
+.hero { position: relative; min-height: 760px; overflow: hidden; background: #f8f7f4 url("assets/hero-background-v3.jpg") right center / auto 100% no-repeat; }
+.hero::before { content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none; background: linear-gradient(90deg, #f8f7f4 0 38%, rgba(248,247,244,.92) 43%, rgba(248,247,244,.48) 51%, rgba(248,247,244,0) 60%); }
+.hero-inner { position: relative; z-index: 1; width: min(1450px, 100%); min-height: 760px; margin: auto; padding: 38px clamp(24px, 5vw, 74px) 70px; isolation: isolate; }
 .brand { position: relative; z-index: 3; display: inline-flex; align-items: center; gap: 16px; color: #090909; text-decoration: none; font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: clamp(1.45rem, 2.2vw, 2.25rem); letter-spacing: .16em; text-transform: uppercase; }
 .brand-mark { position: relative; display: grid; width: 58px; aspect-ratio: 1; place-items: center; color: #fff; background: #050505; border-bottom: 5px solid var(--red); font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 2rem; letter-spacing: -.02em; }
 .hero-copy { position: relative; z-index: 2; width: min(610px, 51%); padding-top: 68px; }
@@ -60,6 +61,7 @@ footer p { margin: 0; color: #aeb6bd; font-size: .84rem; }
 @media (max-width: 640px) {
   .section-inner { width: min(100% - 28px, var(--max)); }
   .hero { min-height: 760px; background-position: 68% center; background-size: auto 100%; }
+  .hero::before { background: linear-gradient(90deg, #f8f7f4 0 52%, rgba(248,247,244,.92) 58%, rgba(248,247,244,.46) 66%, rgba(248,247,244,0) 75%); }
   .hero-inner { min-height: 760px; padding: 22px 18px 0; }
   .hero-inner::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(247,246,242,.98) 0%, rgba(247,246,242,.86) 40%, rgba(247,246,242,.15) 70%); }
   .brand { gap: 10px; font-size: 1.25rem; }
